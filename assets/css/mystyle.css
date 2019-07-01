@@ -1,0 +1,26 @@
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: green;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 90%;
+    height: 80px;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.menu-item:hover{
+    transition: .4s ease;
+    background-color: white;
+}
