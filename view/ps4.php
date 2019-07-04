@@ -37,6 +37,7 @@
                                     for(var i=0; i < dadosJson.length; i++){
                                         $('.row').append(
                                             '<div class="game-card">'+
+                                                '<a href="produto-individual.php?game='+dadosJson[i].id+'">'+
                                                 '<img src="/corujao/'+dadosJson[i].url_imagem+'" alt="game_thumb450x450">'+
                                                 '<div class="title">'
                                                     +dadosJson[i].titulo+

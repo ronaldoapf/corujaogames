@@ -122,9 +122,6 @@
 
                 $games = $busca->fetchAll();
 
-                //while($g = $busca->fetch()){
-                //    $games[] = $g;
-                //}
                 return $games;
             
             }   catch(Exception $ex) {

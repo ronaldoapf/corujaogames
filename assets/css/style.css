@@ -155,3 +155,8 @@
 .carrinho-produto :last-child{
     justify-content: right;
 }
+
+.btn{
+    background-color: green !important;
+    color: white !important;
+}

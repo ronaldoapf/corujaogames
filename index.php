@@ -32,6 +32,7 @@
             </h4>
             
             <div class="row">
+                <form method="POST" action="controller/adicionar-carrinho.php">
                     <script>
                         $(document).ready(function(){
                             $.ajax({
@@ -52,8 +53,8 @@
                                                 '<div class="price">'+
                                                     'R$' +dadosJson[i].preco+
                                                 '</div>'+     
-                                                '<button class="btn btn-sucess">Adicionar ao carrinho</button>'+                                         
                                             '</a>'+
+                                                '<button class="btn btn-sucess" type="submit">Adicionar ao carrinho</button>'+                                         
                                             '</div>'
 
                                         );
@@ -62,8 +63,9 @@
                             });
                         });
                     </script>
-                </div>
+                </form>
             </div>
+        </div>
             
         </div>
     </div>

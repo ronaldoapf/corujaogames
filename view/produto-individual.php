@@ -43,17 +43,19 @@
                         </div>
 
                         <div class="col-md-6" style="float: right">
-                            <h4>IMPERDÍVEL</h4>
-                            <?php
+                        <h4>IMPERDÍVEL</h4>
+                        <?php
                                 echo '
-                                    <div class="card-body">
-                                        <h5 class="card-title">'.$game['titulo'].'</h5>
-                                        <p class="card-text" style="text-align: justify">'.$game['descricao'].'</p>
-                                        <div class="price">R$ '.$game['preco'].'</div>
-                                        <button class="btn btn-success">Adicionar ao carrinho</button>
-                                    </div>';
-                            ?>
-                        </div>
+                                <div class="card-body">
+                                <h5 class="card-title">'.$game['titulo'].'</h5>
+                                <p class="card-text" style="text-align: justify">'.$game['descricao'].'</p>
+                                <div class="price">R$ '.$game['preco'].'</div>
+                                <a href="/corujao/controller/adicionar-carrinho.php?game='.$game['id'].'">
+                                    <button class="btn btn-success" type="submit">Adicionar ao carrinho</button>
+                                </a>
+                                </div>';
+                                ?>
+                            </div>
                     </div>
                 </div>
             </div>

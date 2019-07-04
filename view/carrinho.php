@@ -43,6 +43,7 @@
             </div>
             
         </div>
+        
     </div>
 
 
@@ -56,28 +57,21 @@
     <script src="../assets/js/main.js"></script>
     <!-- <script src="assets/js/font-awesome.js"></script> -->
     <script>
-        // $(function(){
-        //     $("#login-form").submit(function(ev){
-        //         ev.preventDefault();
-        //         var data = $(this).serializeArray();
-        //         var login = data[0].value;
-        //         var senha = data[1].value;
-        //         $.ajax({
-        //             type: "POST",
-        //             url: "controller/iniciar-sessao.php",
-        //             data: {
-        //                 login: login,
-        //                 senha: senha
-        //             },
-        //             success: function(ans){
-        //                 console.log(ans);
-        //             },
-        //             error: function(err){
-        //                 console.log(err);
-        //             }
-        //         });
-        //     })
-        // })
+       $(document).ready(function(){
+            $.ajax({
+                type: 'post',
+                url: '../controller/buscar-produtos-carrinho.php'
+                success: function(dados){
+                    var dadosJson = JSON.parse(dados);
+
+                    for(var i=0; i < dadosJson.length; i++){
+                        $('.row').append(
+                            dadosJson[i].id_produto
+                        );
+                    }
+                }
+            });
+       });
     </script>
 </body>
 
