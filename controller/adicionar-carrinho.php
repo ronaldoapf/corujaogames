@@ -49,7 +49,12 @@
                 </script>
             ';
             
-            echo $result = $usuario->atualizarCarrinho($cpf, $id, $quantidade);
+            $result = $usuario->atualizarCarrinho($cpf, $id, $quantidade);
+            echo '
+                <script type="text/javascript">
+                    window.location="'.$_SERVER['HTTP_REFERER'].'";
+                </script>
+            ';
             
         }
         

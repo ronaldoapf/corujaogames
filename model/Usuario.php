@@ -75,7 +75,7 @@
             $conn = new Connection();
             
             $busca = $conn->getConn()->prepare(
-                "SELECT id, titulo, descricao, url_imagem, preco FROM carrinho_usuario 
+                "SELECT id, quantidade, titulo, descricao, url_imagem, preco FROM carrinho_usuario 
                 INNER JOIN produto ON carrinho_usuario.id_produto = produto.id WHERE cpf = ?"
             );
 
