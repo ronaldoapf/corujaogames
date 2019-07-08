@@ -20,30 +20,68 @@
     ?>
 
     <div class="content">
-        <div class="container">
-            <div class="carrinho-title">
-                <h5>Carrinho de compras</h5>
-            </div>
+        <div class="container fafafa">
 
-            <div class="row">
-
-                <div class="carrinho-produto col-12">
-                    <div class="titulo-produto col-2">
-                        <h5>Fifa 19</h5>
+            <div class="custom-card">
+                <div class="first-side">
+                    <div class="image">
+                        <img src="./6acaa755ef.jpg" alt="">
                     </div>
-                    
-                    <div class="img-produto col-2">
-                        <img src="../assets/uploads/thumbs/Xbox/fifa19.jpg" alt="">
+                    <div class="title">
+                        Days Gone - PS4
+                        <div class="price">
+                            Valor unitário: R$ 199,99
+                        </div>
                     </div>
-
-                    <div class="preco-produto col-8 d-flex">
-                        <h5>159,99</h5>
+                </div>
+                <div class="ammount">
+                    <div class="info">
+                        <div class="q">
+                            Quantidade: 5 <br>
+                        </div>
+                        <div class="subtotal">
+                            Subtotal: R$ 999,95
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-trash"></i>
                     </div>
                 </div>
             </div>
-            
+            <div class="custom-card">
+                <div class="first-side">
+                    <div class="image">
+                        <img src="./6acaa755ef.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        Days Gone - PS4
+                        <div class="price">
+                            Valor unitário: R$ 199,99
+                        </div>
+                    </div>
+                </div>
+                <div class="ammount">
+                    <div class="info">
+                        <div class="q">
+                            Quantidade: 5 <br>
+                        </div>
+                        <div class="subtotal">
+                            Subtotal: R$ 999,95
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-trash"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="total-value">
+                Valor total: <br>
+                <div class="cash">
+                    R$ 1.999,90
+                </div>
+                em até 10x sem juros de R$ 199,99
+            </div>
         </div>
-        
     </div>
 
 
@@ -56,23 +94,7 @@
     <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/main.js"></script>
     <!-- <script src="assets/js/font-awesome.js"></script> -->
-    <script>
-       $(document).ready(function(){
-            $.ajax({
-                type: 'post',
-                url: '../controller/buscar-produtos-carrinho.php'
-                success: function(dados){
-                    var dadosJson = JSON.parse(dados);
 
-                    for(var i=0; i < dadosJson.length; i++){
-                        $('.row').append(
-                            dadosJson[i].id_produto
-                        );
-                    }
-                }
-            });
-       });
-    </script>
 </body>
 
 </html>

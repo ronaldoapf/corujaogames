@@ -160,3 +160,58 @@
     background-color: green !important;
     color: white !important;
 }
+
+.custom-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    background: white;
+}
+
+.first-side {
+    display: flex;
+    align-items: center;
+}
+.custom-card .image {
+    width: 150px;
+}
+.custom-card .image img {
+    height: 150px;
+    width: 150px;
+}
+.custom-card .title {
+    font-size: 18px;
+    color: darkblue;
+}
+.custom-card .price {
+    font-size: 14px;
+    color: #333;
+}
+.custom-card .q {
+    font-size: 18px;
+}
+.custom-card .subtotal {
+    font-size: 14px;
+    color: #666;
+}
+.ammount {
+    display: flex;
+    align-items: center;
+}
+.icons {
+    margin-left: 15px;
+    font-size: 20px;
+    color: darkred;
+}
+.total-value {
+    text-align: right;
+    font-size: 14px;
+}
+.total-value .cash {
+    font-size: 24px;
+    color: #333;
+}

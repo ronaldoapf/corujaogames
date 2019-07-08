@@ -29,14 +29,13 @@
                         aria-haspopup="true" aria-expanded="false"> 
                         <i class="fas fa-user-circle"></i>
                         <?php
-                            $user = $_SESSION['user'];
-                            $a = json_decode($user);
-                            echo $a->nome;
+                            $user = isset($_SESSION['user']) ? json_decode($_SESSION["user"])->nome : "";
+                            echo $user;
                         ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <?php
-                            if($_SESSION['user']){
+                            if(isset($_SESSION['user'])){
                                 echo '
                                     <a class="dropdown-item" href="#">Minha conta</a>
 
