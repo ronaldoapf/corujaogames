@@ -71,7 +71,7 @@
         }
 
 
-        public function buscarJogosCarrinho($cpf){
+        public function buscarJogosCarrinho($cpf){ 
             $conn = new Connection();
             
             $busca = $conn->getConn()->prepare(
@@ -82,7 +82,9 @@
             $busca->bindValue(1, $cpf);
 
             $busca->execute();
-            return $busca->fetchAll();
+            $games = $busca->fetchAll();
+            if($games) return $games;
+            else echo $cpf;
         }
 
         public function atualizarCarrinho($cpf, $id, $quantidade){

@@ -177,11 +177,11 @@
     align-items: center;
 }
 .custom-card .image {
-    width: 150px;
+    width: 100px;
 }
 .custom-card .image img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 .custom-card .title {
     font-size: 18px;

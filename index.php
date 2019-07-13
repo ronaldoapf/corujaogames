@@ -54,7 +54,7 @@
                                                     'R$' +dadosJson[i].preco+
                                                 '</div>'+     
                                             '</a>'+
-                                                '<button class="btn btn-sucess" type="submit">Adicionar ao carrinho</button>'+                                         
+                                                '<button class="btn btn-sucess" href="controller/adicionar-carrinho.php" type="submit">Adicionar ao carrinho</button>'+                                         
                                             '</div>'
 
                                         );
